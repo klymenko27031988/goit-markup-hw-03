@@ -164,7 +164,7 @@
   /*Hero*/
   
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-photo.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero-photo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,8 +217,10 @@
     display: flex;
   }
   
-  .features > .item:not(:last-child) {
+  .features > .item {
     margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+
   }
   
   .feature-tittle {
@@ -245,16 +247,18 @@
   
   
 
-  .section.work-section
-   {padding-top:0;}
+  .section.work-section {
+    padding-top:  94px;
+    padding-bottom: 94px;
+  }
 
   .work-img {
     display: flex;
     justify-content: space-between;
   }
   
-  .work-tittle,
-  .team-tittle {
+  
+  .title {
     color: var(--text-nav-tittle);
   
     font-weight: 700;
@@ -262,6 +266,8 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    
+    margin-bottom: 50px;
   }
   
   /*Team*/
@@ -286,15 +292,17 @@
   
   .team-list > .list-item {
     padding-bottom: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+
   }
 
   .team-worker {
-    padding-top: 0px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
   
   .name-worker {
-    margin-top: 30px;
+   
     margin-bottom: 10px;
   
     color: var(--text-nav-tittle);
@@ -430,13 +438,17 @@
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100%/3);
+    flex-basis: calc((100%-60px)/3);
   }
   
   .img-description {
-    
-  
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    flex-basis: calc((100% - 90px) / 3);
+    
+    	
+    
   }
   
   .portfolio-list > .list-item:not(:nth-child(3n)) {
