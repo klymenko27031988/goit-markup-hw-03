@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    
 
     <title>Портфоліо</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body class="page">
     <!-- Шапка сайта -->
-    <header class="header portfolio-header">
-        <div class="conteiner">
-            <a href="./index.html" class="logo"> Web<span class="studio-header">Studio</span></a>
-    
-            <nav class="head-navigation">
-                <ul class="header-nav">
-                    <li class="item"><a href="./index.html" class="link">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-                    <li class="item"><a href="#adress" class="link">Контакти</a></li>
-                </ul>
-            </nav>
-    
-            <ul class="header-adress">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
+    <header class="header">
+        <div class="conteiner header-conteiner">
+        <a class="logo link" href=""> Web<span class="accent-header">Studio</span></a>
+        <nav class="nav-header">
+        <ul class="nav-list list">
+            <li class="nav-list-item current-link">
+            <a class="nav-list-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-list-item">
+            <a class="nav-list-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-list-item">
+            <a class="nav-list-link link" href="#footer">Контакти</a>
+            </li>
+        </ul>
+        </nav>
+        <ul class="contact-list list">
+            <li class="contact-info-item">
+            <a class="contact-mail-header link" href="mailto:info@devstudio.com"> 
+                <svg class="icon-mail icon-contact">
+                <use href="./images/sprite.img.svg#icon-mail" width="16" height="12"></use>
+             </svg> info@devstudio.com </a>
+            </li>
+            <li class="contact-info-item">
+            <a class="contact-tel-header link" href="tel:+380961111111"> 
+                <svg class="icon-tel icon-contact">
+                <use href="./images/sprite.img.svg#icon-tel" width="10" height="16"></use>
+             </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
         </div>
-    
     </header>
     <main>
         <section class="section">
@@ -148,33 +162,33 @@
         </address>
         </div>
         <div class="join-social">
-            <h2 class="join-heading">присоединяйтесь</h2>
+            
             <ul class="join-social-list list">
                 <li class="join-social-list-item">
                     <a class="join-social-list-link" href=""> 
                     <svg class="join-social-list-icon" width="20" height="20">
-                        <use href="./img/sprite.img.svg#icon-instagram"></use>
+                        <use href="./images/sprite.img.svg#icon-instagram"></use>
                     </svg>    
                     </a>
                 </li>
                 <li class="join-social-list-item">
                     <a class="join-social-list-link" href=""> 
                     <svg class="join-social-list-icon" width="20" height="20">
-                        <use href="./img/sprite.img.svg#icon-twitter"></use>
+                        <use href="./images/sprite.img.svg#icon-twitter"></use>
                     </svg>    
                     </a>
                 </li>
                 <li class="join-social-list-item">
                     <a class="join-social-list-link" href=""> 
                     <svg class="join-social-list-icon" width="20" height="20">
-                        <use href="../img/sprite.img.svg#icon-facebook"></use>
+                        <use href="../images/sprite.img.svg#icon-facebook"></use>
                     </svg>    
                     </a>
                 </li>
                 <li class="join-social-list-item">
                     <a class="join-social-list-link" href=""> 
                     <svg class="join-social-list-icon" width="20" height="20" >
-                        <use href="./img/sprite.img.svg#icon-linkedin"></use>
+                        <use href="./images/sprite.img.svg#icon-linkedin"></use>
                     </svg>    
                     </a>
                 </li>

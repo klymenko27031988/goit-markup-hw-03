@@ -42,11 +42,8 @@
  
     
   }
-  .section {
-    padding-top: 94;
-    padding-bottom: 94;
   
-  }
+  
   .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -80,65 +77,131 @@
   
   /*Header*/
   
-  .header > .conteiner {
-    display: flex;
-    align-items: center;
-  }
-  
-  /*Header Logo*/
-  
-  .logo {
-    text-decoration: none;
-  
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+    background-color: #FFFFFF;
+}
+
+.current-link {
     color: var(--accent);
-  
-    font-family: Raleway, sans-serif;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-  }
-  
-  .studio-header {
+    color: var(--accent);
+    padding-left: 0;
+    margin-right: 93px;
+}
+
+.accent-header {
     color: var(--text-nav-tittle);
-  }
-  
-  /*Navigation*/
-  
-  .head-navigation {
-    margin-left: 93px;
-  }
-  
-  .header-nav {
-    display: flex;
-  }
-  
-  .header-nav .item:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-  .header-nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    color: var(--text-nav-tittle);
-  
+}
+
+.nav-list-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  }
-  
-  .header-nav .link:hover,
-  .header-nav .link:focus {
+    color: inherit;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
     color: var(--accent);
-  }
-  
-  .header-nav .link.current {
+} 
+
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-mail-header {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-links);
+}
+
+.contact-tel-header {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-links);
+}
+
+.contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-info-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-links);
+}
+
+.icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--second-text-color);
+}
+
+.contact-mail-header:hover,
+.contact-mail-header:focus {
     color: var(--accent);
-  }
-  
+} 
+
+.contact-tel-header:hover,
+.contact-tel-header:focus {
+    color: var(--accent);
+} 
+
+
+.contact-mail-header:hover .icon-contact,
+.contact-mail-header:focus .icon-contact {
+    fill: var(--accent);
+} 
+
+.contact-tel-header:hover .icon-contact,
+.contact-tel-header:focus .icon-contact {
+    fill: var(--accent);
+} 
+
 
   
     /*-----benefits----*/
@@ -340,7 +403,7 @@
   }
   
   .team-list > .list-item {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     flex-basis: calc((100% - 90px) / 4);
     
 
@@ -495,7 +558,7 @@
 }
 
 .logo-footer {
-    font-family:'Raleway', sans-serif;;
+    font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -545,6 +608,8 @@
 }
   .join-social {
     margin-left: 70px;
+    
+    
 }
 
 .join-heading {
