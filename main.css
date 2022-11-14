@@ -212,9 +212,12 @@
     align-content: center;
 }
 
+.benefits-item:not(:last-child){
+  margin-right: 30px;
+    
+}
 .benefits-item {
-    margin-right: 30px;
-    flex-basis: calc((100%-90)/4);  
+  flex-basis: calc((100% - 90px)/4);  
 }
 
 .benefits-icon-link {
@@ -235,7 +238,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-    width: 270px;
+   
 }
 
 .benefits-text {
@@ -243,7 +246,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-links);
-    width: 270px;
+    
 }
 
   /*Header adress*/
@@ -711,7 +714,12 @@
     display: flex;
     flex-wrap: wrap;
     
+    
+  }.list-item {
+    display: block;
+    max-width: 100%;
   }
+  
   
   .img-description {
     padding: 20px 24px;
@@ -741,7 +749,6 @@
     margin-bottom: 4px;
   
     color: var(--text-nav-tittle);
-  
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
