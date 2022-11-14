@@ -214,13 +214,14 @@
 
 .benefits-item:not(:last-child) {
     margin-right: 30px;
+    flex-basis: calc((100%-90)/4);  
 }
 
 .benefits-icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+   
     height: 120px;
     background-color: var(--second-background-color);
 
@@ -398,7 +399,7 @@
   .team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    
     text-align: center;
   }
   
@@ -585,6 +586,15 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+    .contact-mail-footer:hover,
+    .contact-mail-footer:focus  {
+      color: var(--accent);
+    }
+   .contact-tel-footer:hover,
+   .contact-tel-footer:focus {
+    color: var(--accent);
+   }
+  
 
 .contact-tel-footer {
     font-style: normal;
@@ -707,7 +717,7 @@
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
-    flex-basis: calc((100% - 90px) / 3);
+    
     
     	
     
@@ -715,6 +725,7 @@
   
   .portfolio-list > .list-item:not(:nth-child(3n)) {
     margin-right: 30px;
+    
   }
   
   .portfolio-list > .list-item:not(:nth-last-child(-n + 3)) {
